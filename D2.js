@@ -1,26 +1,49 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
+const num1 = 25;
+const num2 = 40;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let largest;
+
+if (num1 > num2) {
+  largest = num1;
+} else if (num2 > num1) {
+  largest = num2;
+} else {
+  largest = "Both numbers are equal";
+}
+console.log("The largest number is:", largest);
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
+let myInteger = 3;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (myInteger !== 5) {
+  console.log("not equal");
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+let n = 50;
+if (n % 5 === 0) {
+  console.log("divisibile per 5");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+const firstNumber = 3;
+const secondNumber = 5;
+let result;
+if (firstNumber === 8 || secondNumber === 8 || firstNumber + secondNumber === 8 || firstNumber - secondNumber === 8) {
+  result = true;
+} else {
+  result = false;
+}
+console.log("Condition met:", result);
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -48,14 +71,27 @@
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+const value = 35;
+let isNumber;
+if (typeof value === "number") {
+  isNumber = true;
+} else {
+  isNumber = false;
+}
+console.log("Is the value a number:", isNumber);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+const numberToCheck = 8;
+let outcome;
+if (numberToCheck % 2 === 0) {
+  outcome = "even";
+} else {
+  outocme = "odd";
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log("The number is:", outcome);
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -98,11 +134,18 @@ const me = {
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
+const numbers = [];
+let i = 1;
+if (i <= 10) {
+  numbers.push(i);
+}
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(numbers);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+myArray.pop();
+myArray.push(100);
+console.log(myArray);
