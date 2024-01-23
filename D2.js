@@ -117,6 +117,9 @@ const me = {
   skills: ["javascript", "html", "css"],
 };
 
+me.city = "Toronto";
+console.log(me);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
