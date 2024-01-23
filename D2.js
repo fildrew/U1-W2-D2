@@ -123,14 +123,15 @@ console.log(me);
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
-const me = {
+const mio = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
   city: "Toronto",
 };
-me.splice(lastName);
-console.log(me);
+
+delete mio.lastName;
+console.log(mio);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 13
@@ -143,7 +144,8 @@ const io = {
   city: "Toronto",
 };
 
-io.skills.push("css"), console.log(me.skills);
+io.skills.push("css");
+console.log(me.skills);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
