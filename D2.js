@@ -144,7 +144,7 @@ const io = {
 };
 
 delete io.skills("css");
-console.log(io.skills);
+console.log(io);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
