@@ -143,7 +143,7 @@ const io = {
   city: "Toronto",
 };
 
-delete io.skills("css");
+io.skills.pop("css");
 console.log(io);
 
 /* ESERCIZIO 14
