@@ -129,21 +129,21 @@ const me = {
   skills: ["javascript", "html", "css"],
   city: "Toronto",
 };
-delete me.lastName;
+me.splice(lastName);
 console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-const me = {
+const io = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
   city: "Toronto",
 };
 
-me.skills.push("css"), console.log(me.skills);
+io.skills.push("css"), console.log(me.skills);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
