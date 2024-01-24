@@ -103,7 +103,6 @@ if (a >= b && a >= c) {
   middle = a >= b ? a : b;
   lowest = a < b ? a : b;
 }
-
 console.log("Sorted values (highest to lowest):", highest, middle, lowest);
 
 /* ESERCIZIO 8
